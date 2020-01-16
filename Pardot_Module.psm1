@@ -19,7 +19,7 @@ function SMA_PardotAuthenticate($url,$userkey,$email,$password)
     if($authenticate.err)
     {
         Write-Host $authenticate.err
-        Exit $authenticate.''@attributes''.err_code
+        Exit $authenticate.'@attributes'.err_code
     }
     else
     {
@@ -39,7 +39,7 @@ function SMA_PardotGetAllProspects($url,$userkey,$apikey)
     {
         Write-Host $getprospect
         Write-Host $getprospect.err
-        Exit $getprospect.''@attributes''.err_code
+        Exit $getprospect.'@attributes'.err_code
     }
     else
     {
@@ -59,7 +59,7 @@ function SMA_PardotGetProspectAccount($url,$userkey,$apikey,$company)
     {
         Write-Host $getprospect
         Write-Host $getprospect.err
-        Exit $getprospect.''@attributes''.err_code
+        Exit $getprospect.'@attributes'.err_code
     }
     else
     {
@@ -95,7 +95,7 @@ function SMA_PardotGetProspect($url,$userkey,$apikey,$email,$id)
 
             if($getprospect.err -ne "Invalid prospect email or id")
             {
-                Exit $getprospect.''@attributes''.err_code
+                Exit $getprospect.'@attributes'.err_code
             }
             else
             {
@@ -118,7 +118,7 @@ function SMA_PardotGetCampaign($url,$userkey,$apikey,$name)
     {
         Write-Host $campaign
         Write-Host $campaign.err
-        Exit $campaign.''@attributes''.err_code
+        Exit $campaign.'@attributes'.err_code
     }
     else
     {
@@ -138,7 +138,7 @@ function SMA_PardotGetOpportunity($url,$userkey,$apikey)
     {
         Write-Host $opp
         Write-Host $opp.err
-        Exit $opp.''@attributes''.err_code
+        Exit $opp.'@attributes'.err_code
     }
     else
     {
@@ -158,7 +158,7 @@ function SMA_PardotGetCustomFields($url,$userkey,$apikey)
     {
         Write-Host $fields
         Write-Host $fields.err
-        Exit $fields.''@attributes''.err_code
+        Exit $fields.'@attributes'.err_code
     }
     else
     {
@@ -187,7 +187,7 @@ function SMA_PardotGetList($url,$userkey,$apikey,$name)
     {
         Write-Host $list
         Write-Host $list.err
-        Exit $list.''@attributes''.err_code
+        Exit $list.'@attributes'.err_code
     }
     else
     {
@@ -216,7 +216,7 @@ function SMA_PardotGetListMembers($url,$userkey,$apikey,$listid)
     {
         Write-Host $listmem
         Write-Host $listmem.err
-        Exit $listmem.''@attributes''.err_code
+        Exit $listmem.'@attributes'.err_code
     }
     else
     {
@@ -243,7 +243,7 @@ function SMA_PardotTag($url,$userkey,$apikey,$tag)
     {
         Write-Host $tag
         Write-Host $tag.err
-        Exit $tag.''@attributes''.err_code
+        Exit $tag.'@attributes'.err_code
     }
     else
     {
@@ -276,7 +276,7 @@ function SMA_PardotAddProspect($url,$userkey,$apikey,$email,$firstname,$lastname
         {
             Write-Host $add
             Write-Host $add.err
-            Exit $add.''@attributes''.err_code
+            Exit $add.'@attributes'.err_code
         }
         else
         {
@@ -311,7 +311,7 @@ function SMA_PardotAddtoList($url,$userkey,$apikey,$listid,$prospectid)
     {
         Write-Host $add
         Write-Host $add.err
-        Exit $add.''@attributes''.err_code
+        Exit $add.'@attributes'.err_code
     }
     else
     {
@@ -340,7 +340,7 @@ function SMA_PardotRemoveFromList($url,$userkey,$apikey,$listid,$prospectid)
     {
         Write-Host $remove
         Write-Host $remove.err
-        Exit $remove.''@attributes''.err_code
+        Exit $remove.'@attributes'.err_code
     }
     else
     {
