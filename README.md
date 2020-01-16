@@ -1,19 +1,40 @@
-# Project Name
-Project description
+# Pardot API functions with Powershell
+This script contains functions that will help you create scripts against the Pardot API.
+
+# Prerequisites
+* Powershell v5.1
+* <a href url="http://developer.pardot.com/">Pardot API v3</a>
+
+# Instructions
+To use this module, you first need to import it into your script.
+
+Example:
+```
+Import-Module "C:\Pardot_Module.psm1" -Force
+```
+
+Functions:
+* <b>SMA_PardotAddProspect</b> - Creates a new prospect
+* <b>SMA_PardotAddToList</b> - Adds a prospect to a list
+* <b>SMA_PardotAuthenticate</b> - Authenticate to the Pardot API
+* <b>SMA_PardotGetAllProspects</b> - Get all prospects
+* <b>SMA_PardotGetCampaign</b> - Get a campaign
+* <b>SMA_PardotGetCustomFields</b> - Get custom fields
+* <b>SMA_PardotGetList</b> - Get information about a list
+* <b>SMA_PardotGetListMembers</b> - Get members of a list
+* <b>SMA_PardotGetOpportunity</b> - Get an opportunity
+* <b>SMA_PardotGetProspect</b> - Get a prospect
+* <b>SMA_PardotGetProspectAccount</b> - Get a prospect account
+* <b>SMA_PardotRemoveFromList</b> - Removes a prospect from a list
+* <b>SMA_PardotTag</b> - Returns information about a tag
 
 # Disclaimer
 No Support and No Warranty are provided by SMA Technologies for this project and related material. The use of this project's files is on your own risk.
 
 SMA Technologies assumes no liability for damage caused by the usage of any of the files offered here via this Github repository.
 
-# Prerequisites
-
-
-# Instructions
-
-
 # License
-Copyright 2019 SMA Technologies
+Copyright 2020 SMA Technologies
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
